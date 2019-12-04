@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>events-widget</title>
+
+    <link rel="stylesheet" href="athena/css/framework.min.css">
   </head>
   <body>
     <noscript>
       <strong>We're sorry but events-widget doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+    <div id="main" class="container mt-5 mb-3">
+      <div id="vueApp"></div>
+    </div>
+
+    <!-- Athena JS (will use already-loaded theme version in WP) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js" integrity="sha256-mIiWebTG82x+OcV3vUA49ffGDIAJ53uC9jflw5/+REs=" crossorigin="anonymous"></script>
+    <script src="athena/js/framework.min.js"></script>
     <!-- built files will be auto injected -->
   </body>
 </html>

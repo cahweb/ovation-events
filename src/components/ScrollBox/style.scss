@@ -1,0 +1,51 @@
+.scrollbox {
+    position: relative;
+    
+    padding: 1em;
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+    scroll-behavior: smooth;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.scroll-control {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    pointer-events: none;
+}
+
+.scroll-left, .scroll-right {
+    width: 5vw;
+    height: 100%;
+    pointer-events: initial;
+
+    opacity: 0;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.scroll-left {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.scroll-right {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.scroll-button {
+    padding: 0;
+    text-align: center;
+    cursor: default;
+}

@@ -1,0 +1,54 @@
+.event-card {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 10px 10px 12px rgba(100, 100, 100, 0.5);
+    padding: 1em;
+    border: 1px solid rgb(225, 225, 225);
+
+    cursor: default;
+
+    width: 22vw;
+    min-width: 22vw;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+
+        > div {
+            height: 100%;
+        }
+    }
+}
+
+.event-info {
+    height: 66%;
+
+    h4, p {
+        align-self: center;
+        width: 100%;
+        color: rgb(25, 25, 25);
+    }
+
+    h4 {
+        height: 50%;
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+        margin-bottom: 0;
+        min-height: 10vh;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.divider {
+    border-top: 1px solid rgb(200, 200, 200);
+    margin-bottom: 1em;
+}
+
+.placeholder {
+    height: 60%;
+}
