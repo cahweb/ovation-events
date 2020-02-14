@@ -10,7 +10,7 @@ This plugin is employed through the shortcode `[ovation]`. It has a few options 
   * `theatre`: Displays Theatre UCF events.
   * `music`: Displays UCF Music events.
   * `gallery`: Displays UCF Art Gallery events.
-  * `visual`: Displaycs UCF School of Visual Arts and Design (SVAD) events. If used on its own, will also include events from the gallery, but not *vice versa*.
+  * `visual`: Displays UCF School of Visual Arts and Design (SVAD) events. If used on its own, will also include events from the gallery, but not *vice versa*.
   * `celebrates`: Displays events that are a part of the annual UCF Celebrates the Arts event.
 
 
