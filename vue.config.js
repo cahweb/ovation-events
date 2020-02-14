@@ -1,3 +1,12 @@
+/**
+ * The configuration file for this Vue-CLI project. Sets build paths
+ * and provides Webpack configuration that makes the project more
+ * easily compatible with WordPress
+ * 
+ * @author Mike W. Leavitt
+ * @since 1.0.0
+ */
+
 module.exports = {
     productionSourceMap: false,
     publicPath: process.env.NODE_ENV === 'production'

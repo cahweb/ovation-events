@@ -20,32 +20,61 @@
     position: absolute;
     left: 0;
     width: 100%;
-    height: 90%;
+    height: 100%;
     pointer-events: none;
 }
 
 .scroll-left, .scroll-right {
-    width: 5vw;
     height: 100%;
-    pointer-events: initial;
-
-    opacity: 0;
-
-    &:hover {
-        opacity: 1;
-    }
+    pointer-events: none;
 }
 
 .scroll-left {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+
+    .scroll-button {
+        svg {
+            padding-right: 0.5em;
+        }
+    }
 }
 
 .scroll-right {
     background-image: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+
+    .scroll-button {
+        svg {
+            padding-left: 0.5em;
+        }
+    }
 }
 
 .scroll-button {
-    padding: 0;
+    padding: .15em .3em;
+    height: 80px;
+    width: 80px;
     text-align: center;
     cursor: default;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(175, 175, 175, 0.25);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    pointer-events: all;
+    border-radius: 50%;
+    transition: transform 0.2s;
+
+    &.click-down {
+        background-color: rgba(0, 0, 0, 0.25);
+        box-shadow: none;
+        transform: translate(5px, 5px);
+    }
+
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+div.d-flex.flex-row {
+    position: relative;
+    height: 100%;
 }

@@ -50,3 +50,23 @@ a {
     min-height: 20vh;
     margin-right: 1em;
 }
+
+@media screen and (max-width: 768px) {
+    .vertical-md-down {
+        flex-direction: column !important;
+
+        .thumb {
+            zoom: 100% !important;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .horizontal-lg-up {
+        flex-direction: row !important;
+
+        .thumb {
+            min-width: 25%;
+        }
+    }
+}

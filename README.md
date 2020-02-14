@@ -13,7 +13,10 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
+
+### Compiles and minifies for development
 ```
+npm run build-dev
 
 ### Lints and fixes files
 ```

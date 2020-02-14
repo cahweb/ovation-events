@@ -1,8 +1,9 @@
 <template>
     <a :href="url" 
-        class="d-flex flex-row justify-content-center mb-0"
+        target="_blank"
+        class="d-flex justify-content-center mb-0"
     >
-        <div class="event-entry py-3 px-2">
+        <div class="d-flex event-entry py-3 px-2 vertical-md-down horizontal-lg-up">
             <entry-image
                 :src="info.productionLogoLink"
                 :name="info.productionName"
@@ -10,9 +11,10 @@
             >
             </entry-image>
             <div v-if="emptyImage" class="placeholder"></div>
-            <div class=".event-info">
+            <div class="event-info">
                 <h5 v-html="dateRange"></h5>
                 <h4 class="font-condensed">{{ info.productionName }}</h4>
+                <h6>{{ `${info.productionVenue.name}, ${info.productionVenue.location}` }}</h6>
                 <div v-html="simpleDesc" class="desc"></div>
             </div>
         </div>

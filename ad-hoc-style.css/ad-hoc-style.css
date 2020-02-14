@@ -1,0 +1,48 @@
+.ovation-style-preview a {
+  width: 100%;
+  text-decoration: none;
+  color: inherit; }
+  .ovation-style-preview a:hover {
+    background-color: #EEE;
+    color: inherit;
+    text-decoration: none; }
+
+.ovation-style-preview .event-entry {
+  width: inherit;
+  text-decoration: inherit; }
+  .ovation-style-preview .event-entry h5, .ovation-style-preview .event-entry h4, .ovation-style-preview .event-entry div {
+    text-decoration: inherit; }
+  .ovation-style-preview .event-entry h5, .ovation-style-preview .event-entry h4 {
+    color: #191919; }
+  .ovation-style-preview .event-entry .desc {
+    font-size: 14px;
+    color: #444; }
+    .ovation-style-preview .event-entry .desc /deep/ strong {
+      color: #191919; }
+    .ovation-style-preview .event-entry .desc /deep/ .by, .ovation-style-preview .event-entry .desc /deep/ .music-by,
+    .ovation-style-preview .event-entry .desc /deep/ .lyrics-by, .ovation-style-preview .event-entry .desc /deep/ .book-by {
+      margin-bottom: 0; }
+    .ovation-style-preview .event-entry .desc /deep/ .directed-by {
+      margin-bottom: 0.5em; }
+
+.ovation-style-preview .entry-image-card {
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
+  object-position: center; }
+
+.ovation-style-preview .thumb {
+  zoom: 60%;
+  min-width: 25%; }
+
+@media screen and (max-width: 768px) {
+  .ovation-style-preview .vertical-md-down {
+    flex-direction: column !important; }
+    .ovation-style-preview .vertical-md-down .thumb {
+      zoom: 100% !important; } }
+
+@media screen and (min-width: 769px) {
+  .ovation-style-preview .horizontal-lg-up {
+    flex-direction: row !important; }
+    .ovation-style-preview .horizontal-lg-up .thumb {
+      min-width: 25%; } }
