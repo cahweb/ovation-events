@@ -3,7 +3,7 @@
         :src="src" 
         :alt="name" 
         :title="name" 
-        :class="{ 'mr-4': isThumb, 'float-left': isThumb, thumb: isThumb, invisible: !hasSrc, 'entry-image-card': isCard }"
+        :class="{ 'mr-4': isThumb, 'float-left': isThumb, thumb: isThumb, invisible: !hasSrc, 'entry-image-card': isCard, 'img-IE': (isIE && isThumb) }" 
         @load="doneLoad()" 
         ref="img"
     >

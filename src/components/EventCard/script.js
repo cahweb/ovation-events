@@ -10,7 +10,7 @@
  */
 
 import EntryImage from '../EntryImage';
-import {mapState, mapActions} from 'vuex';
+import {mapState, mapActions, mapGetters} from 'vuex';
 
 export default {
     components: {
@@ -252,6 +252,18 @@ export default {
                     }
                 }
             }
+
+            if (this.isIE) {
+                if (text[text.length / 2] == ' '
+                    || text[(text.length / 2) - 1] == ' '
+                    || text[(text.length / 2) + 1] == ' '
+                ) {
+                    text = text.slice(0, text.length / 2) + '<br>' + text.slice(text.length / 2, text.length);
+                }
+                else {
+                    text = text.slice(0, text.length / 2) + '-<br>' + text.slice(text.length / 2, text.length);
+                }
+            }
         
             return text;
         },
@@ -264,6 +276,9 @@ export default {
             'cardHeight',
             'depts',
         ]),
+        ...mapGetters('events', [
+            'isIE',
+        ])
     },
 
     methods: {

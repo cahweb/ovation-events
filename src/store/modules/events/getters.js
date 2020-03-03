@@ -7,4 +7,8 @@
  * @since 1.0.0
  */
 
-export const getters = {};
+export const getters = {
+    isIE: () => {
+        return /*@cc_on!@*/false || !!document.documentMode;
+    },
+};

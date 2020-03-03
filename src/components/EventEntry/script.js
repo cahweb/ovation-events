@@ -4,7 +4,7 @@
  */
 
 import EntryImage from '../EntryImage';
-import {mapState} from 'vuex';
+import {mapState, mapGetters} from 'vuex';
 
 export default {
     components: {
@@ -253,6 +253,9 @@ export default {
             'ciUrl',
             'clientID',
             'format',
+        ]),
+        ...mapGetters('events', [
+            'isIE',
         ])
     },
     methods: {

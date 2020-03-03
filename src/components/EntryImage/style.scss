@@ -16,3 +16,9 @@
     object-fit: contain;
     object-position: center;
 }
+
+.img-IE {
+    zoom: 100% !important;
+    width: calc(100vw / 6) !important;
+    max-height: 35vh;
+}

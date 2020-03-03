@@ -1,3 +1,5 @@
+/*eslint no-console: 1*/
+
 /**
  * The script for the EntryImage component. Mostly a container for an
  * <img> tag, with some dynamic attributes and display properties.
@@ -6,7 +8,7 @@
  * @version 1.0.0
  */
 
-import {mapState} from 'vuex';
+import {mapState, mapGetters} from 'vuex';
 
 export default {
     // Image src and the name of the production are passed from the
@@ -33,8 +35,23 @@ export default {
         hasSrc() {
             return this.src != '';
         },
+        viewWidth() {
+            return Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        },
+        imgStyleIE() {
+            const val = this.viewWidth / 5;
+            if (this.isIE) {
+                return { width: `${val}px !important` };
+            } 
+            else {
+                return {}
+            }
+        },
         ...mapState('events', [
             'format'
+        ]),
+        ...mapGetters('events', [
+            'isIE',
         ])
     },
 
